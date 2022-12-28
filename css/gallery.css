@@ -1,5 +1,8 @@
+@charset "UTF-8";
+@import url("./common.css");
 * {
   box-sizing: content-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 a {
@@ -8,102 +11,132 @@ a {
 }
 
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 body header {
-  height: 100px;
-}
-body section {
-  color: #ffffff;
-  left: 20%;
-}
-body section h1 {
-  font-size: 1.6rem;
-}
-body section .title01 button {
-  border-bottom: 1px solid;
-  cursor: pointer;
-  color: rgb(133, 118, 118);
-  font-size: 1.2rem;
-  background-color: transparent;
-  font-weight: bold;
-}
-body section .title01 button:hover {
-  color: #AC0A00;
-  transition: all 0.2s ease-in-out;
-}
-body section .pop-up {
   width: 100%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  display: none;
+  top: 38px;
 }
-body section .pop-up article {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80vw;
-  margin: 0 auto;
-  background-color: #ddd;
-  color: black;
+body header h1 {
+  font-size: 2.5rem;
   text-align: center;
-  padding: 20px;
+  font-weight: 700;
+}
+body section .content01 {
+  width: 100vw;
+  height: 100%;
+}
+body section .content01 article {
+  margin: 0 auto;
+  width: 83vw;
+}
+body section .content01 article h2 {
+  margin-top: 100px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+}
+body section .content01 article h2::before {
+  content: "";
+  width: 8px;
+  height: 23px;
+  background-color: #AC0A00;
   position: absolute;
+  top: 50%;
+  transform: translate(-210%, -45%);
+  border-radius: 30px;
 }
-body section .pop-up article button {
+body section .content01 article figure {
+  align-items: center;
+  margin-top: 55px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 500;
+}
+body section .content01 article figure img {
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  width: 758px;
+  height: 351px;
+  margin-bottom: 48px;
+}
+body section .content01 article figure figcaption {
+  line-height: 1.5rem;
+  font-size: 1.13rem;
+}
+body section .content01 article figure figcaption p {
+  margin-bottom: 10px;
+}
+body section .content01 article figure figcaption span {
+  color: rgb(22, 22, 169);
+  font-size: 1.15rem;
+}
+body section .content02 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 163px;
+  background-color: #000;
+  color: #fff;
+}
+body section .content02 .floor {
+  margin: 0 auto;
+  padding-top: 120px;
+  width: 83vw;
+}
+body section .content02 .floor h2 {
+  font-weight: 400;
+  position: relative;
+  padding-left: 18px;
+}
+body section .content02 .floor h2::before {
+  content: "";
+  width: 8px;
+  height: 23px;
+  background-color: #AC0A00;
   position: absolute;
-  padding: 20px;
-  top: 20px;
-  right: 20px;
-  border-style: none;
-  background-color: transparent;
-  font-size: 1.75rem;
-  color: #AC0A00;
-  font-weight: bold;
-  cursor: pointer;
+  top: 50%;
+  transform: translate(-210%, -45%);
+  border-radius: 30px;
 }
-body section .pop-up.active {
-  display: block;
-}
-body section .floor {
-  padding: 20px;
-}
-body section .floor a {
-  padding: 30px;
-}
-body section .floor .f {
-  padding: 20px;
+body section .content02 .floor .f {
+  height: 164px;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
-body section .floor .f .title {
-  width: 15vw;
-  height: 25px;
-  font-size: 1.3rem;
-  font-weight: bold;
+body section .content02 .floor .f .floor-name {
+  width: 17vw;
+  font-size: 2.625rem;
+  font-weight: 700;
   padding: 20px;
 }
-body section .floor .f .inner {
+body section .content02 .floor .f .inner {
   width: 55vw;
   margin-left: 20px;
   line-height: middle;
   text-align: center;
   font-size: 1.2rem;
 }
-body section .floor .f .move {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fff;
+body section .content02 .floor .f .move {
+  width: 81px;
+  height: 107px;
 }
-body section .floor .f .inner:hover {
+body section .content02 .floor .f .move img {
+  width: 100%;
+  height: 100%;
+}
+body section .content02 .floor .f .inner:hover {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+}
+body section .content02 .floor .floor-03::after {
+  content: "전시관 입구";
+  font-weight: 0.3rem;
 }
 body section .f:nth-child(1):hover::after {
   content: "";
