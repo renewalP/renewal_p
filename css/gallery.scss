@@ -16,7 +16,7 @@ body{
     padding: 0;
 
     header{
-        width: 100%;
+        width: 100vw;
         top:38px;
     
         h1{
@@ -28,7 +28,7 @@ body{
     section{
         .content01{
             width: 100vw;
-            height: 100%;
+            height: 100vh;
             article{
                 margin: 0 auto;
                 width: 83vw;
@@ -115,21 +115,20 @@ body{
                         width: 17vw;
                         font-size: 2.625rem;
                         font-weight: 700;
-                        padding: 20px;
+                        padding: 45px;
                     }
                     .inner{
                         width: 55vw;
-                        margin-left: 20px;
                         line-height: middle;
                         text-align: center;
                         font-size: 1.2rem;
                     }
                     .move{ 
-                        width: 81px;
-                        height: 107px;
+                        width: 17vw;
                         img{
-                            width: 100%;
-                            height: 100%;
+                            width: 81px;
+                            height: 107px;
+                            padding-left: 165px; 
                         }
                     }
     
@@ -142,9 +141,16 @@ body{
                 }
 
                 .floor-03{
+                    position: relative;
                     &::after{
                         content: "전시관 입구";
-                        font-weight: 0.3rem;
+                        width: 85px;
+                        left: 0;
+                        font-size: 1.1rem;
+                        font-weight: lighter;
+                        color: #ddd;
+                        position: absolute;
+                        transform: translate(24%, -70%);
                     }
                 }
                 
