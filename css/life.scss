@@ -68,7 +68,7 @@ $images:
 
     @keyframes nextPage {
         @for $i from 0 through 4 {
-            #{$i * 20} { background-image: nth($images, ($i + 1)); }
+            #{$i * 20}% { background-image: nth($images, ($i + 1)); }
         }
     }
 }
@@ -162,23 +162,26 @@ $images:
 
 @keyframes nextFlip1 {
     @for $i from 0 through 4 {
-        #{$i * 20} { background-image: nth($images, ($i + 1)); background-position: -178px -2px; transform: rotateY(0deg); }
-        #{10 + ($i * 20)} { background-image: nth($images, ($i + 2)); background-position: -210px -2px; transform: rotateY(180deg); }
+
+        #{$i * 20}% { background-image: nth($images, ($i + 1)); background-position: -178px -2px; transform: rotateY(0deg); }
+        #{10 + ($i * 20)}% { background-image: nth($images, ($i + 2)); background-position: -210px -2px; transform: rotateY(180deg); }
     }
 }
 
 @for $i from 2 through 6 {
     @keyframes nextFlip#{$i} {
         @for $j from 0 through 4 {
-            #{$j * 20} { background-image: nth($images, ($j + 1)); background-position: #{-148 + (($i - 2) * 30)}px -2px; transform: rotateY(0deg); }
-            #{((10 + ($j * 20)) + (($i - 1) * 0.5))} { background-image: nth($images, ($j + 2)); background-position: #{-238 - (($i - 2) * 30)}px -2px; transform: rotateY(180deg); }
+
+            #{$j * 20}% { background-image: nth($images, ($j + 1)); background-position: #{-148 + (($i - 2) * 30)}px -2px; transform: rotateY(0deg); }
+            #{((10 + ($j * 20)) + (($i - 1) * 0.5))}% { background-image: nth($images, ($j + 2)); background-position: #{-238 - (($i - 2) * 30)}px -2px; transform: rotateY(180deg); }
         }
     }
 }
 
 @keyframes nextFlip7 {
     @for $i from 0 through 4 {
-        #{$i * 20} { background-image: nth($images, ($i + 1)); background-position: -2px -2px; transform: rotateY(0deg); }
-        #{13 + ($i * 20)} { background-image: nth($images, ($i + 2)); background-position: -388px -2px; transform: rotateY(180deg); }
+
+        #{$i * 20}% { background-image: nth($images, ($i + 1)); background-position: -2px -2px; transform: rotateY(0deg); }
+        #{13 + ($i * 20)}% { background-image: nth($images, ($i + 2)); background-position: -388px -2px; transform: rotateY(180deg); }
     }
 }
