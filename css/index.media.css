@@ -1683,7 +1683,7 @@
     height: 100%;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 414px) {
+@media screen and (max-width: 414px) {
   .main-text {
     position: fixed;
     width: 100%;
